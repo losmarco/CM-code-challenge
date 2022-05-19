@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 80%;
+}
+
+#globalButton {
+  display: inline-block;
+  height: 36px;
+  padding: 0 26px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: blue 1px solid;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-header__button {
+  background: none;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-header__button:hover {
+  cursor: pointer;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
